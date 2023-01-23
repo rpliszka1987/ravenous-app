@@ -3,7 +3,8 @@ import "./Business.css";
 
 // Temporary business data as temporary object
 const business = {
-  imageSrc: "https://content.codeacademy.com/programs/react/ravenous/pizza.jpg",
+  imageSrc:
+    "https://www.spellbrite.com/wp-content/uploads/PIZZA-1-neon-led-custom-sign-changable-letters1.jpg",
   name: "MarginOtto Pizzeria",
   address: "1010 Paddington Way",
   city: "Flavortown",
