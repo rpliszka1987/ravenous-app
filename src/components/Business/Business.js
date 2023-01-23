@@ -1,5 +1,5 @@
 import React from "react";
-import "./business.css";
+import "./Business.css";
 
 // Temporary business data as temporary object
 const business = {
