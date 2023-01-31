@@ -8,17 +8,26 @@ const sortByOptions = {
 };
 
 class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      term: "",
+      location: "",
+      sortBy: "best_match",
+    };
+  }
+
   renderSortByOptions() {
     return Object.keys(sortByOptions).map((sortByOption) => {
       let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={this.sortByOptionValue}>{this.sortByOption}</li>;
+      return <li key={this.sortByOptionValue}>{sortByOption}</li>;
     });
   }
   render() {
     return (
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
-          <ul>{this.renderSortByOptions}</ul>
+          <ul>{this.renderSortByOptions()}</ul>
         </div>
         <div className="SearchBar-fields">
           <input placeholder="Search Businesses" />
